@@ -1,0 +1,28 @@
+
+
+// Getting all
+GET http://localhost:3000/subscribers
+
+###
+// Getting one
+GET http://localhost:3000/subscribers/5d9e4625451ecc4250e311ab
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amaing Person",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+DELETE http://localhost:3000/subscribers/5d9e4625451ecc4250e311ab
+
+###
+PATCH http://localhost:3000/subscribers/5d9e4625451ecc4250e311ab
+Content-Type: application/json
+
+{
+    "name": "Jason"
+}
